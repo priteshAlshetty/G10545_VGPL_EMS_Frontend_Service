@@ -1,0 +1,17 @@
+export const LOCATIONS = {
+  Utility_Area:{ id: "Utility Area", x: 1300, y: 60, w: 100, h: 200 },  
+  HT01: { id: "HT-01", x: 10,  y: 300,  w: 260, h: 260 },
+  PCC01: { id: "PCC-01", x: 270,  y: 300,  w: 260, h: 260 },
+  HT02: { id: "HT-02", x: 800,  y: 20,  w: 175, h: 300 },
+  PCC02: { id: "PCC-02", x: 975,  y: 20,  w: 175, h: 300 },
+  PCC03: { id: "PCC-03", x: 1600, y: 80,  w: 350, h: 260 },
+  MAIN_11KV_SWB1: { id: "MAIN 11KV SWB-1", x: 10,  y: 850, w: 175, h: 320 },
+  MAIN_11KV_SWB2: { id: "MAIN 11KV SWB-2", x: 185, y: 850, w: 175, h: 320 },
+  PCC08: { id: "PCC-08", x: 1600, y: 390, w: 350, h: 320 },
+  PCC07: { id: "PCC-07", x: 1600, y: 850, w: 350, h: 320 },
+  HT03: { id: "HT-03", x: 400,  y: 850, w: 175, h: 320 },
+  PCC04: { id: "PCC-04", x: 575,  y: 850, w: 175, h: 320 },
+  PCC05: { id: "PCC-05", x: 800, y: 850, w: 350, h: 320 },
+  HT04: { id: "HT-04", x: 1200, y: 850, w: 175, h: 320 },
+  PCC06: { id: "PCC-06", x: 1375, y: 850, w: 175, h: 320 },
+};

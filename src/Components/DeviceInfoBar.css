@@ -1,0 +1,30 @@
+.device-info-bar {
+    width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ 
+  padding: 10px 16px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); */
+  gap: 10px;
+}
+
+.info-item {
+  display: flex;
+  gap: 6px;
+  /* font-size: 14px; */
+  
+}
+
+.device-info-bar .key {
+  /* font-weight: 600; */
+  /* color: #555; */
+  color: #ffff;
+}
+
+.device-info-bar .value {
+  /* color: #111; */
+  color: #ffff;
+}

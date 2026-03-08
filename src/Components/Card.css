@@ -1,0 +1,67 @@
+/* src/components/Card.css */
+.card {
+  background: #2B3144;
+  border-radius: 14px;
+  padding: 22px 24px;
+
+  /* REMOVE margin when using CSS Grid */
+  /* margin: 12px; */
+
+  /* REMOVE min-width so grid can control width */
+  /* min-width: 260px; */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* Horizontal offset | Vertical offset | Blur radius | Spread | Color */
+box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.3), 
+            0 4px 15px rgba(13, 16, 26, 0.5);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+  width: 100%;
+  margin-bottom: 14px;
+  background-color: #2b314477;
+  color: #f1f1f1;
+  font-size: 1.35rem;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.card li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  font-size: 0.95rem;
+  color: #ffffff;
+  border-bottom: 1px solid #575252;
+}
+
+.card li:last-child {
+  border-bottom: none;
+}
+
+.card li strong {
+  color: #FFFFFF;
+  font-weight: 500;
+}
+
+
+.active{
+  background: linear-gradient(90deg, #9e74ffc0 0%, #e35e9ebe 50%, #ff5079bb 100%);
+  
+}
