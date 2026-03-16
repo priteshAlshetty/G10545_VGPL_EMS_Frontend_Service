@@ -970,7 +970,8 @@ const convertNumbers = (obj) => {
 
 export const getMeterData = async ({ meterId, date }) => {
   const response = await fetch(
-    `http://localhost:3000/api/ems/processeddata/meterdata/at/?meter_id=HT1METER1&date=2026-03-08`
+    // `http://localhost:3000/api/ems/processeddata/meterdata/at/?meter_id=HT1METER1&date=2026-03-09`
+    `http://localhost:3000/api/ems/processeddata/meterdata/at/?meter_id=${meterId}&date=${date}`
   );
 
   const result = await response.json();

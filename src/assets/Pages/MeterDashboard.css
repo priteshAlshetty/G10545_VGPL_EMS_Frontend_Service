@@ -25,9 +25,6 @@
       flex: 1;
 }
 
-.logo-vishakha{
-  
-}
 
 .logo-vishakha img{
     height: 50px;
@@ -41,7 +38,7 @@
     padding: 10px 20px;
     border: none;
     background-color: #e9e4fbfc;
-    color: #0568d1;
+    color: #e35e9e;
     cursor: pointer;
     font-weight: 600;
 }
@@ -62,7 +59,7 @@
 .aa{
       position: relative;
   z-index: 1;
-    background-color: #2177f396;
+    background-color: #25175d;
 
 }
 
@@ -74,9 +71,36 @@
   height: 100%;
   object-fit: cover;
 
-  opacity: 0.2;   /* transparency */
+  opacity: 0.1;   /* transparency */
   z-index: -2;
 }
 
 .Avg-label{color: green;
 font-weight: 600;}
+
+
+.stat-group:hover h3 {
+  color: rgb(192, 61, 116); 
+  transition: color 0.3s ease-in-out;/* change to any color you want */
+}
+
+.date-selection {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.meter-selection-dropdown {
+    padding: 10px 20px;
+    border: none;
+    background-color: #e9e4fbfc;
+    color: #045dbd;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.id_info h4{
+    color: #525353;
+    border: 1px dashed #a7aca9;
+    padding: 5px
+}

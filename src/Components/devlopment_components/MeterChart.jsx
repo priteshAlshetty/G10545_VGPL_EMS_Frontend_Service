@@ -3,12 +3,22 @@ import './MeterChart.css';
 
 export default function MeterChart({ title, x, series, yTitle }) {
 
+  // ✅ Convert series values to numbers to avoid NaN errors
+  const safeSeries = series?.map(s => ({
+    ...s,
+    data: s.data?.map(v => Number(v))
+  }));
+
+  // ✅ Ensure x-axis dates are valid
+  const safeX = x?.map(d => new Date(d).getTime());
+
   const options = {
 
     chart: {
       type: "area",
       height: 350,
       stacked: false,
+      animations: { enabled: false }, // prevents SVG path animation errors
 
       zoom: {
         type: "x",
@@ -53,7 +63,7 @@ export default function MeterChart({ title, x, series, yTitle }) {
 
     xaxis: {
       type: "datetime",
-      categories: x
+      categories: safeX
     },
 
     yaxis: {
@@ -63,7 +73,12 @@ export default function MeterChart({ title, x, series, yTitle }) {
     },
 
     tooltip: {
-      shared: true
+      shared: true,
+      y: {
+        formatter: function(value) {
+          return Number(value).toFixed(2);
+        }
+      }
     }
 
   };
@@ -71,11 +86,11 @@ export default function MeterChart({ title, x, series, yTitle }) {
   return (
     <div className="chart-container">
 
-      <h3>{title}</h3>
+     <h3>{title}</h3>
 
       <Chart
         options={options}
-        series={series}
+        series={safeSeries}
         type="area"
         height={300}
       />
