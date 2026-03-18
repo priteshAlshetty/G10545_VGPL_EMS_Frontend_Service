@@ -16,7 +16,7 @@ function LoginPage() {
     // Basic hardcoded login validation
     if (email === 'admin@mq.com' && password === 'admin') {
        alert('Login Succesful');
-      window.location.href = '/'; // Redirect after successful login
+      window.location.href = '/machine-status-dev'; // Redirect after successful login
     } else {
       setError('Invalid email or password');
     }

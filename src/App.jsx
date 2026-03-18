@@ -44,6 +44,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/machine-status" element={<IndividualMeterScreen />} />
         <Route path="/machine-status-dev" element={<IndividualMeterScreen_dev />} />
+        <Route path="/" element={<Login />} />
 
 
         <Route path="/ems/panel/:panelId/details" element={<PanelDetails />} />
@@ -51,7 +52,7 @@ function App() {
 
         {/* 🔹 Main Dashboard Route */}
         <Route
-          path="/"
+          path="/s"
           element={
             <div className="container">
               
